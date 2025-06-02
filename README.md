@@ -27,7 +27,7 @@ Welcome to the **Restaurant Website**, a modern, responsive web app that allows 
 | **Home** | Hero banner with restaurant imagery, featured dishes, and call-to-action buttons like “View Menu” or “Order Now.” |
 | **Menu** | Displays the restaurant’s offerings with categories (e.g., Appetizers, Main Courses, Desserts), item descriptions, prices, and images. |
 | **About** | Information about Restaurant’s history, chefs, and unique selling points. |
-| **Reviews** | Customer testimonials and ratings, with an option for users to leave reviews. |
+| **Reviews** | Customer testimonials and ratings,  |
 | **Profile** | User sign-in, profile management, and order history. |
 | **Checkout** | Step-by-step process for reviewing the order, entering delivery details, and simulating payment. |
 | **Admin Dashboard** | Protected area where staff can: |
@@ -100,7 +100,7 @@ Open your terminal (preferably in VS Code) and run:
 ```bash
 # Replace with your preferred directory
 PS> cd C:\Users\YourUser\Documents\Projects
-PS> git clone https://github.com/MIbrahimPro/Simple-Hair-Salon-Website-using-Mern.git
+PS> git clone https://github.com/MIbrahimPro/Restaurant.git
 ```
 
 - Linux/macOS
@@ -108,7 +108,7 @@ PS> git clone https://github.com/MIbrahimPro/Simple-Hair-Salon-Website-using-Mer
 ```bash
 # Replace with your preferred directory
 $ cd ~/Projects
-$ git clone https://github.com/MIbrahimPro/Simple-Hair-Salon-Website-using-Mern.git
+$ git clone https://github.com/MIbrahimPro/Restaurant.git
 ```
 
 ### 2. Navigate to the Project Folder
@@ -116,13 +116,13 @@ $ git clone https://github.com/MIbrahimPro/Simple-Hair-Salon-Website-using-Mern.
 Windows (PowerShell)
 
 ```bash
-PS> cd Simple-Hair-Salon-Website-using-Mern
+PS> cd Restaurant
 ```
 
 Linux/macOS
 
 ```bash
-$ cd Simple-Hair-Salon-Website-using-Mern
+$ cd Restaurant
 ```
 
 ### 3. Start the Application
