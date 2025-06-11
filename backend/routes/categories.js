@@ -11,15 +11,22 @@ const { authenticateToken, isAdmin } = require('../middleware/auth');
 // ─── Multer Configuration ─────────────────────────────────────────────────────
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/categories/');
+    // compute the full directory path
+    const uploadDir = path.join(__dirname, 'uploads', 'categories');
+
+    // create the directory (and any missing parents) if it doesn't exist
+    fs.mkdir(uploadDir, { recursive: true }, (err) => {
+      if (err) return cb(err);
+      cb(null, uploadDir);
+    });
   },
   filename: (req, file, cb) => {
     const unique = Date.now() + '-' + Math.round(Math.random() * 1e9);
     cb(null, unique + path.extname(file.originalname));
   },
 });
-const upload = multer({ storage });
 
+const upload = multer({ storage });
 // ─── GET /categories ───────────────────────────────────────────────────────────
 // Returns all categories, each with an additional "itemsCount" field.
 router.get('/', async (req, res) => {
