@@ -57,9 +57,3 @@ coverage/
 # Temporary files
 tmp/
 temp/
-
-
-
-backend/uploads/
-!backend/uploads/icons/
-!backend/uploads/items/
