@@ -60,7 +60,7 @@ router.post('/', authenticateToken, isAdmin, upload.single('icon'), async (req, 
     if (!name || !req.file) {
       return res.status(400).json({ message: 'Name and icon are required.' });
     }
-    const iconPath = '/uploads/categories/' + req.file.filename;
+    const iconPath = 'uploads/categories/' + req.file.filename;
     const newCat = new Category({ name: name.trim(), icon: iconPath });
     await newCat.save();
     return res.status(201).json(newCat);

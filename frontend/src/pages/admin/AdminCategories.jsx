@@ -199,7 +199,7 @@ const AdminCategories = () => {
               <tr key={cat._id}>
                 <td>
                   <img
-                    src={cat.icon}
+                    src={"/" + cat.icon}
                     alt={cat.name}
                     style={{ width: "32px", height: "32px", objectFit: "cover" }}
                   />
